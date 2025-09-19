@@ -1,0 +1,54 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  height: 10vh;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.logo h1{
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+.logo img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(97%) saturate(1100%) hue-rotate(66deg) brightness(0.95) contrast(1.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+nav a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.menu {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  gap: 10px;
+}
+.search, .cart, .user-profile {
+  border: 2px solid var(--color-primary); 
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;  
+  display: flex;               
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+.search img, .cart img, .user-profile img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(97%) saturate(1100%) hue-rotate(66deg) brightness(0.95) contrast(1.1);
+}

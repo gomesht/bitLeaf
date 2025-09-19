@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-primary: #175927;
+  --color-secondary: #d06c47;
+
+  --color-light: #c7f7b9;
+  --color-light-2: #f1ddaa;
+  --color-white: #FFFFFF;
+  --color-gray: #B8B8B8;
+
+  --color-accent: #da853b;
+  --color-accent-hover: #f7c068;
+}
+
+/* Barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #f5deb3; /* cor de fundo do trilho (bege) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a3d2b; /* cor do "polegar" (marrom) */
+  border-radius: 10px;
+  border: 2px solid #f5deb3; /* borda para dar contraste */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b5e3c; /* tom mais claro no hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5a3d2b #f5deb3;
+}
+
+
+
+h1, h2, h3, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, span, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #90ea9650;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

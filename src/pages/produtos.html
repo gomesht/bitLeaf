@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitLeaf - Produtos</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <script type="module" src="/scripts/produtos.js"></script>
+  <script type="module" src="/scripts/header.js"></script>
+  <script type="module" src="/scripts/footer.js"></script>
+</head>
+<body>
+  <div id="header-include"></div>
+  <main>
+    <section class="produtos-main-layout">
+      <aside class="produtos-filtros">
+        <h2>Filtrar</h2>
+        <div>
+          <label for="categoria">Categoria:</label>
+          <select id="filtro-categoria">
+            <option value="">Todas</option>
+            <option value="plantas">Plantas</option>
+            <option value="substratos">Substratos</option>
+            <option value="vasos">Vasos</option>
+          </select>
+        </div>
+        <div>
+          <label for="preco-min">Preço mínimo:</label>
+          <input type="number" id="preco-min" min="0" placeholder="0">
+        </div>
+        <div>
+          <label for="preco-max">Preço máximo:</label>
+          <input type="number" id="preco-max" min="0" placeholder="0">
+        </div>
+        <button id="btn-filtrar">Filtrar</button>
+      </aside>
+      <section class="produtos-grid-section">
+        <h1>Produtos</h1>
+        <div id="produtos-grid" class="produtos-grid"></div>
+        <div id="produtos-paginacao" class="produtos-paginacao"></div>
+      </section>
+      <aside class="produtos-carrinho">
+        <h2>Carrinho</h2>
+        <div id="carrinho-itens"></div>
+        <div id="carrinho-total" class="carrinho-total">
+          <span>Total: R$ <span id="carrinho-total-valor">0,00</span></span>
+          <button id="btn-finalizar" disabled>Finalizar Pedido</button>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <div id="footer-include"></div>
+</body>
+</html>
