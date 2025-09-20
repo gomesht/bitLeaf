@@ -18,7 +18,7 @@ function renderProdutosDestaque() {
   // Adiciona evento de clique para cada card
   container.querySelectorAll('.produto-destaque-click').forEach(card => {
     card.addEventListener('click', () => {   
-    window.location.href = '/produtos';
+    window.location.href = '/produtos?id=' + card.getAttribute('data-id');
     });
   });
 }

@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnFiltrar = document.getElementById('btn-filtrar');
   const carrinhoTotalValor = document.getElementById('carrinho-total-valor');
   const btnFinalizar = document.getElementById('btn-finalizar');
+
   let carrinho = {};
 
- 
   const produtosComCategoria = PRODUCTS;
   let produtosFiltrados = produtosComCategoria;
   let paginaAtual = 1;
@@ -128,4 +128,21 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnFiltrar) {
     btnFiltrar.addEventListener('click', filtrarProdutos);
   }
+
+  //função para verifica se tem um id na url e caso positivo adiciona o produto ao carrinho
+  function verificaProdutoNaUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const produtoId = params.get('id');
+    console.log('Produto ID na URL:', produtoId);
+    if (produtoId) {
+      const produto = produtosComCategoria.find(p => p.id === parseInt(produtoId));
+      console.log('Produto encontrado:', produto);
+      if (produto) {
+        addToCart(produto);
+      }
+    }
+  }
+
+  // Chama a função após o DOM estar carregado
+  verificaProdutoNaUrl();
 });

@@ -5,7 +5,7 @@ export const MAIN_TEXTS = {
   },
   sobre: {
     title: "Sobre o BitLeaf",
-    description: "Conheça nossa história e missão."
+    description: "Conheça nossa história e missão. Fornecendo plantas de qualidade desde 2025. "
   },
   contatos: {
     title: "Fale Conosco",
